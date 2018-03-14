@@ -7,9 +7,7 @@ p{
   font-family : Arial;
   margin-top: 0.1em;
 }
-.header{
-  display: grid;
-  grid-template-columns: 1ft 1ft;
+header{
   background-color: lightblue;
   width: inherit;
   height: 250px;
@@ -48,7 +46,7 @@ p{
   width: auto;
   height: auto;
 }
-.clearf{
+.clearf:floating-box{
   content: "";
   display: table;
   clear: both;
@@ -76,3 +74,17 @@ ul{
   border-color: red;
   overflow: hidden;
 }
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

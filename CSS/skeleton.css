@@ -29,8 +29,8 @@
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*my own css */
-.sixText, .cityText, .mtext{
-  font-size: 9px;
+.myText{
+  font-size: inherit;
 }
 .myName {
   font-size: 50px;
@@ -326,9 +326,10 @@ ul ol,
 ol ol,
 ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%; }
+  }
 li {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  }
 
 
 /* Code
@@ -349,6 +350,10 @@ pre > code {
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+table{
+  border: 2;
+  border-color: red;
+}
 th,
 td {
   padding: 12px 15px;
