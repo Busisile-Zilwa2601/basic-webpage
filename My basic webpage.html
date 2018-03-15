@@ -6,27 +6,37 @@
     <meta content="width-device-width,initial-scale=1.0, maximum-scale =1.0, user-scalable = 0" name="viewpoint">
     <link href = "CSS/firstCSS.css" type = "text/css" rel = "stylesheet">
     <style media="screen">
-
-      body {
-        background-color: lightblue;
-      }
-
+      .container {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 0px;
+        box-sizing: border-box; }
 
       @media (min-width:360px) {
         body {
           background-color :lightblue;
         }
+        .container {
+          width: 85%;
+          padding: 0; }
+
         .text{
           display: inline-block;
           width : 20em;
           background-color: none;
+        }
+        header{
+            align:center;
         }
         .spaceTopMin{margin-top: 5em}
       }
 
       @media (min-width: 1000px) {
         body {
-          background-color : white;}
+          background-color : white;
+          }
         .picHistory{
           display:flex;
           flex-direction: row;
@@ -35,10 +45,16 @@
         }
         .spaceTop{margin-top: 5em}
       }
+      p.space{
+        margin-left: 0.5em;
+        margin-right: 1em;
+        width: 12em;
+        justify-content: flex-start;
+      }
 
     </style>
   </head>
-  <body>
+  <body class="container">
     <header>
     <div class = "" >
         <img src = "images/IMG_20180301_134542.jpg" class="thePicture" >
@@ -92,21 +108,18 @@
           </tr>
         </table>
         <br />
-
         <h3><ins>Cape Town Historic places</ins></h3>
         </div >
-        <div class = "picHistory float-left text">
+        <div class = "picHistory float-left text ">
             <div>
               Castle of Good Hope<br />
             <div class = "picHistory">
                   <img src="images/IMG_20180301_175811.jpg" alt = "Castle of Good Hope" style = "max-width:200px;">
-                  <div class = "floating-box">
-                    <ul>
-                      <li>Built between 1666 and 1679, the Castle is known as the oldest surviving building in South Africa and has been the centre of civilian, political and military life at the Cape from approximately 1679.</li>
-                      <li>The site of the new Castle was chosen in 1665 by the Commissioner and later first Governor of the Cape, Isbrand Goske. The engineer, Pieter Dombaer, was responsible for the construction of the Castle which was built by slaves, Khoikhoi, burghers, and company workers. (Anna Ras, die Kasteel en Ander Vestingswerke, p56, 57)</li>
-                      <li>The foundations were dug in 1665 and the cornerstones of the first bastion, later known as the Leerdam Bastion, were laid on the 2nd January 1666, after which building started in all earnest.</li>
-                    </ul>
-                  </div>
+                    <p class = "space">
+                      Built between 1666 and 1679, the Castle is known as the oldest surviving building in South Africa and has been the centre of civilian, political and military life at the Cape from approximately 1679.
+                      The site of the new Castle was chosen in 1665 by the Commissioner and later first Governor of the Cape, Isbrand Goske. The engineer, Pieter Dombaer, was responsible for the construction of the Castle which was built by slaves, Khoikhoi, burghers, and company workers. (Anna Ras, die Kasteel en Ander Vestingswerke, p56, 57)
+                      The foundations were dug in 1665 and the cornerstones of the first bastion, later known as the Leerdam Bastion, were laid on the 2nd January 1666, after which building started in all earnest.
+                    </p>
             </div>
             </div>
 
@@ -114,14 +127,12 @@
               City Hall<br />
               <div class = "picHistory">
                 <img src ="images/IMG_20180119_084639.jpg" alt ="City Hall image" style = "max-width:200px">
-                <div class="floating-box">
-                  <ul>
-                      <li><dfn>Cape Town City Hall</dfn> is a large Edwardian building in Cape Town city cent
-                      re which was built in 1905.</li>
-                      <li>It is located on the <i><b>Grand Parade</b></i> to the west of the <i><b>Castle</b></i> and is built from honey-coloured oolitic limestone imported from Bath in England.</li>
-                      <li>The tower of the City Hall has a Turret Clock which strikes the hours and chimes the Westminster quarters</li>
-                  </ul>
-                </div>
+                    <p class = "space">
+                      <dfn>Cape Town City Hall</dfn> is a large Edwardian building in Cape Town city cent
+                      re which was built in 1905.
+                      It is located on the <i><b>Grand Parade</b></i> to the west of the <i><b>Castle</b></i> and is built from honey-coloured oolitic limestone imported from Bath in England.
+                      The tower of the City Hall has a Turret Clock which strikes the hours and chimes the Westminster quarters
+                    </p>
             </div>
           </div>
 
@@ -130,15 +141,13 @@
             <div class = "picHistory">
 
               <img src = "images/IMG_20180302_093930.jpg" style = "max-width:200px; padding:inherit" alt="Distric six musuem">
-              <div class="floating-box">
-                <ul>
-                    <li><dfn>District Six</dfn> is a former inner city residential area in Cape Town, South Africa.</li>
-                    <li>in 1966 Distric Six was declared a whites-only area under Group Areas Act.</li>
-                    <li>Over 60 thousands inhabitants were forcibly removed during the 1970s by the apartheidvregime.</li>
-                </ul>
-              </div>
+                <p class = "space">
+                    <dfn>District Six</dfn> is a former inner city residential area in Cape Town, South Africa.
+                    in 1966 Distric Six was declared a whites-only area under Group Areas Act.
+                    Over 60 thousands inhabitants were forcibly removed during the 1970s by the apartheidvregime.
+                </p>
           </div>
         </div>
-      </div>
+    </div>
   </body>
 </html>
