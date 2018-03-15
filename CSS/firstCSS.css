@@ -9,19 +9,27 @@ p{
 }
 header{
   background-color: inherit;
-  width: inherit;
+  width: auto;
   height: 250px;
   margin-bottom:1em;
 }
-/*h1.text{
-  text-transform: capitalize;
-  /*text-align: center;
-  font-weight: bold;
-  font-size: 40px;
-  padding-left: 50%;
-  line-height: 500%;
-  font-stretch:ultra-expanded;
-} */
+.tableSize table{
+  width: 100%
+  /*background-color: red;*/
+}
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+
 .thePicture{
   background-color: red;
   border-radius: 50%;

@@ -13,6 +13,11 @@
         margin: 0 auto;
         padding: 0 0px;
         box-sizing: border-box; }
+        .container:after{
+            content: "";
+            display: table;
+            clear: both; }
+        }
 
       @media (min-width:360px) {
         body {
@@ -30,7 +35,7 @@
         header{
             align:center;
         }
-        .spaceTopMin{margin-top: 5em}
+        .spaceTopMin{margin-top: 10em}
       }
 
       @media (min-width: 1000px) {
@@ -43,7 +48,8 @@
           justify-content: flex-start;
           align-items: flex-start;
         }
-        .spaceTop{margin-top: 5em}
+        .spaceTop{margin-top: 2em;}
+        img.spaceLeft{margin: 0 0.5em 0 0;}
       }
       p.space{
         margin-left: 0.5em;
@@ -51,24 +57,27 @@
         width: 12em;
         justify-content: flex-start;
       }
-
     </style>
   </head>
   <body class="container">
     <header>
     <div class = "" >
         <img src = "images/IMG_20180301_134542.jpg" class="thePicture" >
-        <h1 class ="text">Busisile Zilwa</h1>
+        <h1>Busisile Zilwa</h1>
     </div>
-  </header>
+    </header>
     <br />
-    <div class = "spaceTopMin">
-    <p class = "floating-box"><h3><ins>Rome</ins></h3>
-      <img src="images/RomeMap.png" class="float-left" height="30%" width="40%"/><br /><i>Rome</i> is the capital city of Italy. I would like to visit this major
-      city because of it's art, architecture and culture it displays.<br /> The history of this city is phenominal,
-      form the <dfn>Colosseum</dfn> an iconic ancient Roman gladiatorial arean.<br />
-      The beautiful and artistic <dfn>St. Peter's Basilica</dfn> which is the world's largest Basilicaof Chrisitianity.
-      The <dfn> Trevi Fountain</dfn> which is an iconic 18-century sculpted fountain.</p>
+    <br />
+    <div class = "spaceTopMin spaceTop">
+      <h3><ins>Rome</ins></h3>
+      <img src="images/RomeMap.png" class="float-left spaceLeft" style = "max-width:300px;"/>
+      <p class="text">
+        <br /><i>Rome</i> is the capital city of Italy. I would like to visit this major
+        city because of it's art, architecture and culture it displays.<br /> The history of this city is phenominal,
+        form the <dfn>Colosseum</dfn> an iconic ancient Roman gladiatorial arean.<br />
+        The beautiful and artistic <dfn>St. Peter's Basilica</dfn> which is the world's largest Basilicaof Chrisitianity.
+        The <dfn> Trevi Fountain</dfn> which is an iconic 18-century sculpted fountain.
+      </p>
       <br />
     </div>
     <br/>
@@ -87,8 +96,8 @@
       </p>
       <hr />
     </div>
-      <div>
-        <table cellpadding = "15" border="2">
+    <div class="tableSize">
+        <table border = 2>
           <tr>
             <th scope = "col">English</th>
             <th scope = "col">Latin</th>
@@ -107,9 +116,9 @@
             <td>Te amo.</td>
           </tr>
         </table>
+      </div>
         <br />
         <h3><ins>Cape Town Historic places</ins></h3>
-        </div >
         <div class = "picHistory float-left text ">
             <div>
               Castle of Good Hope<br />
